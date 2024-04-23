@@ -1,0 +1,90 @@
+object Form1: TForm1
+  Left = 286
+  Height = 189
+  Top = 157
+  Width = 391
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Add Users in Localgroup Administrators'
+  ClientHeight = 189
+  ClientWidth = 391
+  OnCreate = RadioButton1Change
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object Button1: TButton
+    Left = 232
+    Height = 25
+    Top = 151
+    Width = 148
+    Caption = 'Execute'
+    Default = True
+    TabOrder = 0
+    OnClick = Button1Click
+  end
+  object GroupBox1: TGroupBox
+    Left = 8
+    Height = 88
+    Top = 8
+    Width = 216
+    Caption = 'User'
+    ClientHeight = 68
+    ClientWidth = 212
+    TabOrder = 1
+    object Edit1: TEdit
+      Left = 16
+      Height = 23
+      Top = 32
+      Width = 184
+      TabOrder = 0
+      OnChange = Edit1Change
+    end
+    object RadioButton1: TRadioButton
+      Left = 16
+      Height = 19
+      Top = 8
+      Width = 58
+      Caption = 'Current'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+      OnChange = RadioButton1Change
+    end
+    object RadioButton2: TRadioButton
+      Left = 128
+      Height = 19
+      Top = 8
+      Width = 61
+      Caption = 'Another'
+      TabOrder = 2
+      OnChange = RadioButton2Change
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 8
+    Height = 72
+    Top = 104
+    Width = 217
+    Caption = 'Group of administrators'
+    ClientHeight = 52
+    ClientWidth = 213
+    TabOrder = 2
+    object RadioButton3: TRadioButton
+      Left = 16
+      Height = 19
+      Top = 16
+      Width = 64
+      Caption = 'Add into'
+      Checked = True
+      TabOrder = 1
+      TabStop = True
+    end
+    object RadioButton4: TRadioButton
+      Left = 126
+      Height = 19
+      Top = 16
+      Width = 80
+      Caption = 'Delete from'
+      TabOrder = 0
+    end
+  end
+end
